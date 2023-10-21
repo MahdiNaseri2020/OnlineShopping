@@ -1,0 +1,17 @@
+<!-- MAIN CONTENT-->
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+
+            <div class="col-md-3 p-3" align="center">
+                <img src="{{ product.imageUrl }}" class="img-responsive">
+                <b>{{ product.name }}</b>
+                <h5>{{ product.unitPrice | currency:'USD' }}</h5>
+                <p>{{product.description}}</p>
+                <button class="btn btn-primary btn-sm" (click)="addToCard()">Add to Card</button>
+            </div>
+        </div>
+
+        <a routerLink="/producats" class="mt-4"> <i class="fa-solid fa-arrow-left"></i>  Back</a>
+    </div>
+</div>
